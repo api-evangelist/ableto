@@ -1,13 +1,30 @@
 aid: ableto
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ableto.png
 name: AbleTo
-description: 'AbleTo is a company surfaced as a portfolio company of bain-capital-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'AbleTo is a virtual behavioral health company delivering structured, evidence-based
+  cognitive behavioral therapy and coaching programs for anxiety, depression, and stress, typically
+  delivered through health insurance benefits. Founded in 2008 and acquired by Optum (UnitedHealth
+  Group) in 2020, AbleTo now operates as part of Optum Behavioral Care; its www.ableto.com domain
+  301-redirects to optumbhcare.com. Originally backed by Bain Capital Ventures, the company is
+  patient-facing and publishes no public developer API, SDK, developer portal, or OpenAPI. This
+  profile is maintained in the API Evangelist network for portfolio and market tracking.'
 url: https://raw.githubusercontent.com/api-evangelist/ableto/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - bain-capital-ventures
+x-acquired-by: optum-unitedhealth-group
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
@@ -16,6 +33,10 @@ modified: '2026-07-17'
 tags:
 - Company
 - Healthcare
+- Behavioral Health
+- Mental Health
+- Telehealth
+- Digital Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ableto-domain-security.yml
 - type: Website
   url: https://www.ableto.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
